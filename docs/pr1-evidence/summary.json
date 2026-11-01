@@ -1,0 +1,135 @@
+{
+  "base_sha": "51060a7682cf51810b4bc3a704829438d18cd8dc",
+  "tested_head_sha": "51aeb6208679077a8c8069661a0fb816fa213e6f",
+  "python": "3.12.14",
+  "regression": {
+    "passed": 95,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "baseline_comparison": {
+    "business_failures": 26,
+    "normal_controls_passed": 7,
+    "total": 33
+  },
+  "patched_comparison": {
+    "passed": 33,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "normal_web_business_field_equalities": 60,
+  "same_test_bytes_inputs_and_packages": true,
+  "packages": {
+    "annotated-types": "0.7.0",
+    "anyio": "4.9.0",
+    "certifi": "2025.6.15",
+    "charset-normalizer": "3.4.2",
+    "colorama": "0.4.6",
+    "fastapi": "0.115.9",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "idna": "3.10",
+    "iniconfig": "2.3.1",
+    "jsonpatch": "1.33",
+    "jsonpointer": "3.0.0",
+    "langchain-core": "0.3.65",
+    "langgraph": "0.4.8",
+    "langgraph-checkpoint": "2.0.26",
+    "langgraph-prebuilt": "0.2.2",
+    "langgraph-sdk": "0.1.70",
+    "langsmith": "0.3.45",
+    "orjson": "3.10.18",
+    "ormsgpack": "1.10.0",
+    "packaging": "24.2",
+    "pluggy": "1.7.0",
+    "pydantic": "2.11.7",
+    "pydantic_core": "2.33.2",
+    "Pygments": "2.19.1",
+    "pytest": "9.1.1",
+    "PyYAML": "6.0.2",
+    "requests": "2.32.4",
+    "requests-toolbelt": "1.0.0",
+    "sniffio": "1.3.1",
+    "starlette": "0.41.3",
+    "tenacity": "9.1.2",
+    "typing_extensions": "4.14.0",
+    "typing-inspection": "0.4.1",
+    "urllib3": "2.4.0",
+    "xxhash": "3.5.0",
+    "zstandard": "0.23.0"
+  },
+  "test_sha256": {
+    "test_c1_degraded_nodes.py": "4005b9181edb87720a8b5ec486f75958f9ba4d6d0943c5728519319135f9fa77",
+    "test_c2_langgraph_integration.py": "ec4cc0299d4dffc8f92e66e69b48b143298dcc4cf197a371d855381eafded880",
+    "test_c2_market_quality.py": "e8bd4ba8e3ee92071b84d01bad3924aa9ce715c05e1619f9b591fab37110067c",
+    "test_pr1_task_entry.py": "ff8b95e4d863a52713c0a1d918c45df9071f65cb57a813cca8efca24cc7e3163",
+    "test_review_regressions.py": "6f2297cd069f33cd487bb91216823f8befb22e82390612741da9bbb55c434c27"
+  },
+  "runner_sha256": "f04e8be03cab81bfb6c4d97da289d75c4a7f8aa737fac1d11a37410bca2af944",
+  "real_model_order_attempts": 0,
+  "external_test_transport_attempts": 0,
+  "wrong_source_calls": 0,
+  "blocked_local_probe": "urllib3 IPv6 bind capability probe refused; stdlib asyncio socketpair allowed",
+  "scope": {
+    "product_files": [
+      "app/routers/analysis.py",
+      "app/services/task_analysis_service.py",
+      "app/utils/report_saver.py",
+      "app/utils/result_metadata.py",
+      "core/agents/adapters/market_analyst_v2.py",
+      "core/state/builder.py",
+      "core/workflow/builder.py",
+      "core/workflow/engine.py"
+    ],
+    "product_insertions": 118,
+    "product_deletions": 36,
+    "pr_changed_files": 16
+  },
+  "source_artifact_provenance": {
+    "regression-junit.xml": {
+      "source": "regression/tests.xml",
+      "source_sha256": "d9de5669448907b06632e452c23fb84b4aaf9f40269c517ccb45457a58a9dcbd",
+      "published_sha256": "d9de5669448907b06632e452c23fb84b4aaf9f40269c517ccb45457a58a9dcbd",
+      "transformation": "UTF-8/LF normalization; local workspace path redaction only"
+    },
+    "regression-tests.txt": {
+      "source": "regression/tests.txt",
+      "source_sha256": "85d5ac525d9f4bea095ec365da4d423eb9d8c84e7c84836db450c9a6ac57172c",
+      "published_sha256": "a72616797b87e72b75164edbfca979bf007ecaa77f0d796bf84040c1690b878f",
+      "transformation": "UTF-8/LF normalization; local workspace path redaction only"
+    },
+    "baseline-junit.xml": {
+      "source": "baseline/tests.xml",
+      "source_sha256": "694e19d94684493d399e6a2f7ea8bb694334338c7192178eabc6b2c683dc4abc",
+      "published_sha256": "76b9fd6c8d118e7397626dbf0930dcbfbbd97dfdbf495ce0fe24548f7d152069",
+      "transformation": "UTF-8/LF normalization; local workspace path redaction only"
+    },
+    "baseline-tests.txt": {
+      "source": "baseline/tests.txt",
+      "source_sha256": "56184fa74569368c7378bc9d390f4b0647ef7780a2ccbbb8a042783ece9ff120",
+      "published_sha256": "59a8e811176907a261da3e8bff2f35f54ecb912e4e028bc44efe67d17d6068f6",
+      "transformation": "UTF-8/LF normalization; local workspace path redaction only"
+    },
+    "patched-junit.xml": {
+      "source": "patched/tests.xml",
+      "source_sha256": "9ae67ff2be84aa9467397d4c5042d6453826f6b0af368a310596320d5ef5d139",
+      "published_sha256": "9ae67ff2be84aa9467397d4c5042d6453826f6b0af368a310596320d5ef5d139",
+      "transformation": "UTF-8/LF normalization; local workspace path redaction only"
+    },
+    "patched-tests.txt": {
+      "source": "patched/tests.txt",
+      "source_sha256": "0d44844e466d4da5ec330ff681d5cd4a755eaba54ed946dc0f3e7120e270137b",
+      "published_sha256": "8c29b7a8bb9cf962182bd6aa387be01583c27af939fbfca2af44432c49590111",
+      "transformation": "UTF-8/LF normalization; local workspace path redaction only"
+    },
+    "dependency-check.txt": {
+      "source": "dependency-check.txt",
+      "source_sha256": "22d6c5fc236e42483e00d22dceac06b2aa6e5860c4b914831a65ad261bab98b8",
+      "published_sha256": "d86cb5de584000e311712d9fed5c387c55cda992d1a9a8b8c0fb891cc245722c",
+      "transformation": "UTF-8/LF normalization; local workspace path redaction only"
+    }
+  }
+}

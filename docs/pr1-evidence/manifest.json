@@ -1,0 +1,12 @@
+{
+  "baseline-junit.xml": "76b9fd6c8d118e7397626dbf0930dcbfbbd97dfdbf495ce0fe24548f7d152069",
+  "baseline-tests.txt": "59a8e811176907a261da3e8bff2f35f54ecb912e4e028bc44efe67d17d6068f6",
+  "comparison.json": "1dd94a3d1a684ca584eb208e48dc72f1e802dbb6260572e404b7438b3852e930",
+  "dependency-check.txt": "d86cb5de584000e311712d9fed5c387c55cda992d1a9a8b8c0fb891cc245722c",
+  "patched-junit.xml": "9ae67ff2be84aa9467397d4c5042d6453826f6b0af368a310596320d5ef5d139",
+  "patched-tests.txt": "8c29b7a8bb9cf962182bd6aa387be01583c27af939fbfca2af44432c49590111",
+  "README.md": "61c6ede818940f3d66d2bc62ff3a9bf7827d432bd3e825668de231a33307d88d",
+  "regression-junit.xml": "d9de5669448907b06632e452c23fb84b4aaf9f40269c517ccb45457a58a9dcbd",
+  "regression-tests.txt": "a72616797b87e72b75164edbfca979bf007ecaa77f0d796bf84040c1690b878f",
+  "summary.json": "742a0fcb3eededa633785dc67a7ecc41190244fca4f489cedff43238456de2be"
+}

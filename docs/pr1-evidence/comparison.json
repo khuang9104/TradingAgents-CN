@@ -1,0 +1,1160 @@
+[
+  {
+    "case": "test_selected_task_result_is_not_overwritten_by_legacy_source",
+    "control": false,
+    "identical_inputs_sha256": "a1f92ce1f546ff561d7bb170b94de4492cecf64ee014a140980aa48b633564f5",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "selected task source retained": false,
+        "selected report retained": false,
+        "selected degradation retained": false
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "selected task source retained": true,
+        "selected report retained": true,
+        "selected degradation retained": true
+      }
+    }
+  },
+  {
+    "case": "test_c1_formatter_persistence_web[True-memory]",
+    "control": false,
+    "identical_inputs_sha256": "81b42d3346076d9c540f6b67eaaf205c6f00ae539e78ba1683cfde237fc85940",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "formatted: degradation identity preserved": false,
+        "task: degradation identity preserved": false,
+        "report: degradation identity preserved": false,
+        "web: degradation identity preserved": false,
+        "business report still available": true,
+        "business report content retained": true,
+        "raw input unchanged": true,
+        "private exception not published": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "formatted: degradation identity preserved": true,
+        "task: degradation identity preserved": true,
+        "report: degradation identity preserved": true,
+        "web: degradation identity preserved": true,
+        "business report still available": true,
+        "business report content retained": true,
+        "raw input unchanged": true,
+        "private exception not published": true
+      }
+    }
+  },
+  {
+    "case": "test_c1_formatter_persistence_web[True-task]",
+    "control": false,
+    "identical_inputs_sha256": "57931b124807b1ccd1509e48cd65a8089335c035c205ffc9fc4985071b1c784d",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "formatted: degradation identity preserved": false,
+        "task: degradation identity preserved": false,
+        "report: degradation identity preserved": false,
+        "web: degradation identity preserved": false,
+        "business report still available": true,
+        "business report content retained": true,
+        "raw input unchanged": true,
+        "private exception not published": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "formatted: degradation identity preserved": true,
+        "task: degradation identity preserved": true,
+        "report: degradation identity preserved": true,
+        "web: degradation identity preserved": true,
+        "business report still available": true,
+        "business report content retained": true,
+        "raw input unchanged": true,
+        "private exception not published": true
+      }
+    }
+  },
+  {
+    "case": "test_c1_formatter_persistence_web[True-report]",
+    "control": false,
+    "identical_inputs_sha256": "e20a3a390ad265c519e25115d025225769aafb82c274136e7a7fac275ba07e0d",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "formatted: degradation identity preserved": false,
+        "task: degradation identity preserved": false,
+        "report: degradation identity preserved": false,
+        "web: degradation identity preserved": false,
+        "business report still available": true,
+        "business report content retained": true,
+        "raw input unchanged": true,
+        "private exception not published": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "formatted: degradation identity preserved": true,
+        "task: degradation identity preserved": true,
+        "report: degradation identity preserved": true,
+        "web: degradation identity preserved": true,
+        "business report still available": true,
+        "business report content retained": true,
+        "raw input unchanged": true,
+        "private exception not published": true
+      }
+    }
+  },
+  {
+    "case": "test_c1_formatter_persistence_web[False-memory]",
+    "control": true,
+    "identical_inputs_sha256": "be8a0fcff6ceebc5a8437ace5ccda0568c4c8beecca46d839dfc1c79fd1dbfcd",
+    "baseline": {
+      "outcome": "passed",
+      "exception_type": null,
+      "checks": {
+        "formatted: no false degradation": true,
+        "task: no false degradation": true,
+        "report: no false degradation": true,
+        "web: no false degradation": true,
+        "business report still available": true,
+        "business report content retained": true,
+        "raw input unchanged": true,
+        "private exception not published": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "formatted: no false degradation": true,
+        "task: no false degradation": true,
+        "report: no false degradation": true,
+        "web: no false degradation": true,
+        "business report still available": true,
+        "business report content retained": true,
+        "raw input unchanged": true,
+        "private exception not published": true
+      }
+    }
+  },
+  {
+    "case": "test_c1_formatter_persistence_web[False-task]",
+    "control": true,
+    "identical_inputs_sha256": "268ff9b886e85cff52fcfb8fcc9ec4da5bc389e0d8553cb9b570a5f47aa23a90",
+    "baseline": {
+      "outcome": "passed",
+      "exception_type": null,
+      "checks": {
+        "formatted: no false degradation": true,
+        "task: no false degradation": true,
+        "report: no false degradation": true,
+        "web: no false degradation": true,
+        "business report still available": true,
+        "business report content retained": true,
+        "raw input unchanged": true,
+        "private exception not published": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "formatted: no false degradation": true,
+        "task: no false degradation": true,
+        "report: no false degradation": true,
+        "web: no false degradation": true,
+        "business report still available": true,
+        "business report content retained": true,
+        "raw input unchanged": true,
+        "private exception not published": true
+      }
+    }
+  },
+  {
+    "case": "test_c1_formatter_persistence_web[False-report]",
+    "control": true,
+    "identical_inputs_sha256": "59748dcba66248ce57e8af63e975eff76c785fcecaf02cdfbdcb0e0820f97201",
+    "baseline": {
+      "outcome": "passed",
+      "exception_type": null,
+      "checks": {
+        "formatted: no false degradation": true,
+        "task: no false degradation": true,
+        "report: no false degradation": true,
+        "web: no false degradation": true,
+        "business report still available": true,
+        "business report content retained": true,
+        "raw input unchanged": true,
+        "private exception not published": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "formatted: no false degradation": true,
+        "task: no false degradation": true,
+        "report: no false degradation": true,
+        "web: no false degradation": true,
+        "business report still available": true,
+        "business report content retained": true,
+        "raw input unchanged": true,
+        "private exception not published": true
+      }
+    }
+  },
+  {
+    "case": "test_c1_web_projection_independently[memory]",
+    "control": false,
+    "identical_inputs_sha256": "b58c0da90143bb0b6a5a9cde49e0b753f74145dd5c96b694478b4abfb513c286",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "Web preserves node identity": false,
+        "Web keeps report": true,
+        "Web redacts exception context": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "Web preserves node identity": true,
+        "Web keeps report": true,
+        "Web redacts exception context": true
+      }
+    }
+  },
+  {
+    "case": "test_c1_web_projection_independently[unified_tasks]",
+    "control": false,
+    "identical_inputs_sha256": "0c4e1a592ab41a9c7ff482d7fc00e16b7859352d4a7878c9599dc583ae3aba4d",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "Web preserves node identity": false,
+        "Web keeps report": true,
+        "Web redacts exception context": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "Web preserves node identity": true,
+        "Web keeps report": true,
+        "Web redacts exception context": true
+      }
+    }
+  },
+  {
+    "case": "test_c1_web_projection_independently[mongodb]",
+    "control": false,
+    "identical_inputs_sha256": "0c5588ec837052f0ea6daaf7dca121a2280851cb2f5efbeda342ef1a9cf50f14",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "Web preserves node identity": false,
+        "Web keeps report": true,
+        "Web redacts exception context": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "Web preserves node identity": true,
+        "Web keeps report": true,
+        "Web redacts exception context": true
+      }
+    }
+  },
+  {
+    "case": "test_c1_web_projection_independently[analysis_tasks]",
+    "control": false,
+    "identical_inputs_sha256": "d43059099886cba7b713473959eb08469a24623ccc58dcb9e20826f877eda684",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "Web preserves node identity": false,
+        "Web keeps report": true,
+        "Web redacts exception context": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "Web preserves node identity": true,
+        "Web keeps report": true,
+        "Web redacts exception context": true
+      }
+    }
+  },
+  {
+    "case": "test_c1_incomplete_source_falls_back_to_report[memory]",
+    "control": false,
+    "identical_inputs_sha256": "73e5a182f9d055e6489c97a16ec6b261111e4d8c8f91a315e806b46185d412c7",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "usable report fallback selected": true,
+        "report snapshot degradation identity preserved": false,
+        "report content retained": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "usable report fallback selected": true,
+        "report snapshot degradation identity preserved": true,
+        "report content retained": true
+      }
+    }
+  },
+  {
+    "case": "test_c1_incomplete_source_falls_back_to_report[task]",
+    "control": false,
+    "identical_inputs_sha256": "64cdaa8a03b19ce6638551bf4e10f65d581b8cf56f27272888fee8201dc3b4a8",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "usable report fallback selected": true,
+        "report snapshot degradation identity preserved": false,
+        "report content retained": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "usable report fallback selected": true,
+        "report snapshot degradation identity preserved": true,
+        "report content retained": true
+      }
+    }
+  },
+  {
+    "case": "test_c2_actual_analyst_checks_without_retry[tools-normal]",
+    "control": true,
+    "identical_inputs_sha256": "a296d534faba785de0fc702ac9ba2f199dec3b43f25dee0559ff7ee7f396ba26",
+    "baseline": {
+      "outcome": "passed",
+      "exception_type": null,
+      "checks": {
+        "original report retained": true,
+        "single fake generation": true,
+        "no quality retry": true,
+        "correct quality marking": true,
+        "critical mapped to node degradation": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "original report retained": true,
+        "single fake generation": true,
+        "no quality retry": true,
+        "correct quality marking": true,
+        "critical mapped to node degradation": true
+      }
+    }
+  },
+  {
+    "case": "test_c2_actual_analyst_checks_without_retry[tools-warning]",
+    "control": false,
+    "identical_inputs_sha256": "ed25bfa9f4da49e7e7938235cf4cc66393299a3d26af2a14168b9f0ef6b4e55b",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "original report retained": true,
+        "single fake generation": true,
+        "no quality retry": true,
+        "correct quality marking": false,
+        "critical mapped to node degradation": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "original report retained": true,
+        "single fake generation": true,
+        "no quality retry": true,
+        "correct quality marking": true,
+        "critical mapped to node degradation": true
+      }
+    }
+  },
+  {
+    "case": "test_c2_actual_analyst_checks_without_retry[tools-critical]",
+    "control": false,
+    "identical_inputs_sha256": "2165895f6f9753cbfb5ad3590c6e4b4c342244905893e882d158b13297a19c64",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "original report retained": true,
+        "single fake generation": true,
+        "no quality retry": true,
+        "correct quality marking": false,
+        "critical mapped to node degradation": false
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "original report retained": true,
+        "single fake generation": true,
+        "no quality retry": true,
+        "correct quality marking": true,
+        "critical mapped to node degradation": true
+      }
+    }
+  },
+  {
+    "case": "test_c2_actual_analyst_checks_without_retry[no-tools-normal]",
+    "control": true,
+    "identical_inputs_sha256": "a562fe5cb11faa7e616458d8239128fcb1ea9c4b173cbdcc805a82315f4d49d7",
+    "baseline": {
+      "outcome": "passed",
+      "exception_type": null,
+      "checks": {
+        "original report retained": true,
+        "single fake generation": true,
+        "no quality retry": true,
+        "correct quality marking": true,
+        "critical mapped to node degradation": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "original report retained": true,
+        "single fake generation": true,
+        "no quality retry": true,
+        "correct quality marking": true,
+        "critical mapped to node degradation": true
+      }
+    }
+  },
+  {
+    "case": "test_c2_actual_analyst_checks_without_retry[no-tools-warning]",
+    "control": false,
+    "identical_inputs_sha256": "da332df1f4b299c68e4944be07800587eb9bd195a324092d90e776f6ed365c85",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "original report retained": true,
+        "single fake generation": true,
+        "no quality retry": true,
+        "correct quality marking": false,
+        "critical mapped to node degradation": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "original report retained": true,
+        "single fake generation": true,
+        "no quality retry": true,
+        "correct quality marking": true,
+        "critical mapped to node degradation": true
+      }
+    }
+  },
+  {
+    "case": "test_c2_actual_analyst_checks_without_retry[no-tools-critical]",
+    "control": false,
+    "identical_inputs_sha256": "022e3d6546a2545fd0c62a736f651953cabbb02be8ac15ab5baefd8b93d6a378",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "original report retained": true,
+        "single fake generation": true,
+        "no quality retry": true,
+        "correct quality marking": false,
+        "critical mapped to node degradation": false
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "original report retained": true,
+        "single fake generation": true,
+        "no quality retry": true,
+        "correct quality marking": true,
+        "critical mapped to node degradation": true
+      }
+    }
+  },
+  {
+    "case": "test_actual_entry_quality_to_web[normal-dynamic]",
+    "control": true,
+    "identical_inputs_sha256": "783ea10ec8c26ab6356dc9c6263a5fdd83e96c35fbf35656b9d77c91f1570d1c",
+    "baseline": {
+      "outcome": "passed",
+      "exception_type": null,
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": true,
+        "quality changes downstream prompt": true,
+        "memory: correct degradation nodes": true,
+        "memory: correct node identities": true,
+        "memory: report present": true,
+        "memory: complete normal reports retained": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": true,
+        "task: correct node identities": true,
+        "task: report present": true,
+        "task: complete normal reports retained": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": true,
+        "report: correct node identities": true,
+        "report: report present": true,
+        "report: complete normal reports retained": true,
+        "report: private details redacted": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": true,
+        "quality changes downstream prompt": true,
+        "memory: correct degradation nodes": true,
+        "memory: correct node identities": true,
+        "memory: report present": true,
+        "memory: complete normal reports retained": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": true,
+        "task: correct node identities": true,
+        "task: report present": true,
+        "task: complete normal reports retained": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": true,
+        "report: correct node identities": true,
+        "report: report present": true,
+        "report: complete normal reports retained": true,
+        "report: private details redacted": true
+      }
+    }
+  },
+  {
+    "case": "test_actual_entry_quality_to_web[normal-fallback]",
+    "control": true,
+    "identical_inputs_sha256": "2b9469d3b124b10c34b944a15ce5750920787ac07aa77c7a633a83d8ae42e482",
+    "baseline": {
+      "outcome": "passed",
+      "exception_type": null,
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": true,
+        "quality changes downstream prompt": true,
+        "memory: correct degradation nodes": true,
+        "memory: correct node identities": true,
+        "memory: report present": true,
+        "memory: complete normal reports retained": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": true,
+        "task: correct node identities": true,
+        "task: report present": true,
+        "task: complete normal reports retained": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": true,
+        "report: correct node identities": true,
+        "report: report present": true,
+        "report: complete normal reports retained": true,
+        "report: private details redacted": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": true,
+        "quality changes downstream prompt": true,
+        "memory: correct degradation nodes": true,
+        "memory: correct node identities": true,
+        "memory: report present": true,
+        "memory: complete normal reports retained": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": true,
+        "task: correct node identities": true,
+        "task: report present": true,
+        "task: complete normal reports retained": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": true,
+        "report: correct node identities": true,
+        "report: report present": true,
+        "report: complete normal reports retained": true,
+        "report: private details redacted": true
+      }
+    }
+  },
+  {
+    "case": "test_actual_entry_quality_to_web[warning-dynamic]",
+    "control": false,
+    "identical_inputs_sha256": "7fc1801b18c803825ccceadf59137f07e397fee6afcbb1321599043d285cd565",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": false,
+        "quality changes downstream prompt": false,
+        "memory: correct degradation nodes": true,
+        "memory: correct node identities": true,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": true,
+        "task: correct node identities": true,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": true,
+        "report: correct node identities": true,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": true,
+        "quality changes downstream prompt": true,
+        "memory: correct degradation nodes": true,
+        "memory: correct node identities": true,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": true,
+        "task: correct node identities": true,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": true,
+        "report: correct node identities": true,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    }
+  },
+  {
+    "case": "test_actual_entry_quality_to_web[warning-fallback]",
+    "control": false,
+    "identical_inputs_sha256": "7834e8135953726a0aacef02c3e3e42918073c2e19043a2ee981ca772b0727cd",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": false,
+        "quality changes downstream prompt": false,
+        "memory: correct degradation nodes": true,
+        "memory: correct node identities": true,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": true,
+        "task: correct node identities": true,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": true,
+        "report: correct node identities": true,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": true,
+        "quality changes downstream prompt": true,
+        "memory: correct degradation nodes": true,
+        "memory: correct node identities": true,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": true,
+        "task: correct node identities": true,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": true,
+        "report: correct node identities": true,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    }
+  },
+  {
+    "case": "test_actual_entry_quality_to_web[critical-dynamic]",
+    "control": false,
+    "identical_inputs_sha256": "12c63aab4e94a78a1bb3489d19abb3d987c352c1349f39658603f25e398b2c2b",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": false,
+        "quality changes downstream prompt": false,
+        "memory: correct degradation nodes": false,
+        "memory: correct node identities": false,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": false,
+        "task: correct node identities": false,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": false,
+        "report: correct node identities": false,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": true,
+        "quality changes downstream prompt": true,
+        "memory: correct degradation nodes": true,
+        "memory: correct node identities": true,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": true,
+        "task: correct node identities": true,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": true,
+        "report: correct node identities": true,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    }
+  },
+  {
+    "case": "test_actual_entry_quality_to_web[critical-fallback]",
+    "control": false,
+    "identical_inputs_sha256": "f3a3c74f6a5adcddfd0b7da4b627c47674b335f0fdece11017bd0c3096172533",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": false,
+        "quality changes downstream prompt": false,
+        "memory: correct degradation nodes": false,
+        "memory: correct node identities": false,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": false,
+        "task: correct node identities": false,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": false,
+        "report: correct node identities": false,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": true,
+        "quality changes downstream prompt": true,
+        "memory: correct degradation nodes": true,
+        "memory: correct node identities": true,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": true,
+        "task: correct node identities": true,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": true,
+        "report: correct node identities": true,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    }
+  },
+  {
+    "case": "test_actual_entry_quality_to_web[provider-fallback-dynamic]",
+    "control": false,
+    "identical_inputs_sha256": "eafdb7949c8dbfd0b91b8a46fa5c5828af5b9cd2735813912bba34d90918be40",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": false,
+        "quality changes downstream prompt": false,
+        "memory: correct degradation nodes": false,
+        "memory: correct node identities": false,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": false,
+        "task: correct node identities": false,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": false,
+        "report: correct node identities": false,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": true,
+        "quality changes downstream prompt": true,
+        "memory: correct degradation nodes": true,
+        "memory: correct node identities": true,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": true,
+        "task: correct node identities": true,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": true,
+        "report: correct node identities": true,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    }
+  },
+  {
+    "case": "test_actual_entry_quality_to_web[provider-fallback-fallback]",
+    "control": false,
+    "identical_inputs_sha256": "f32e04d009e06ebc1e91476c145484dce68976ecb4e8cc5dc0c042f42bf901bc",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": false,
+        "quality changes downstream prompt": false,
+        "memory: correct degradation nodes": false,
+        "memory: correct node identities": false,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": false,
+        "task: correct node identities": false,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": false,
+        "report: correct node identities": false,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": true,
+        "quality changes downstream prompt": true,
+        "memory: correct degradation nodes": true,
+        "memory: correct node identities": true,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": true,
+        "task: correct node identities": true,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": true,
+        "report: correct node identities": true,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    }
+  },
+  {
+    "case": "test_actual_entry_quality_to_web[wrapped-error-dynamic]",
+    "control": false,
+    "identical_inputs_sha256": "e8bee727deac01ea8f4d01f1724ec30c29b117eac115f30271812fe2d0592e70",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": true,
+        "quality changes downstream prompt": true,
+        "memory: correct degradation nodes": false,
+        "memory: correct node identities": false,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": false,
+        "task: correct node identities": false,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": false,
+        "report: correct node identities": false,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": true,
+        "quality changes downstream prompt": true,
+        "memory: correct degradation nodes": true,
+        "memory: correct node identities": true,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": true,
+        "task: correct node identities": true,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": true,
+        "report: correct node identities": true,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    }
+  },
+  {
+    "case": "test_actual_entry_quality_to_web[wrapped-error-fallback]",
+    "control": false,
+    "identical_inputs_sha256": "1c2319cd98a79dd7d4179903def2469743d7f8e266af68314a689a478796c774",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": true,
+        "quality changes downstream prompt": true,
+        "memory: correct degradation nodes": false,
+        "memory: correct node identities": false,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": false,
+        "task: correct node identities": false,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": false,
+        "report: correct node identities": false,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "task legitimately completed": true,
+        "same flags consumed and retained by engine": true,
+        "no automatic quality retries": true,
+        "exactly one fake model invocation": true,
+        "exactly one fake tool invocation": true,
+        "quality reaches consumer": true,
+        "quality changes downstream prompt": true,
+        "memory: correct degradation nodes": true,
+        "memory: correct node identities": true,
+        "memory: report present": true,
+        "memory: private details redacted": true,
+        "task: correct degradation nodes": true,
+        "task: correct node identities": true,
+        "task: report present": true,
+        "task: private details redacted": true,
+        "report: correct degradation nodes": true,
+        "report: correct node identities": true,
+        "report: report present": true,
+        "report: private details redacted": true
+      }
+    }
+  },
+  {
+    "case": "test_engine_retains_parallel_merged_flags[sync-dynamic]",
+    "control": false,
+    "identical_inputs_sha256": "b6f1aedef07313283ade77d6522b16a66a875a048e9cb054b8bae3a25c0ce4c9",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "exactly two parallel findings retained": false,
+        "parallel flags both retained": false,
+        "engine agrees with merged consumer state": true,
+        "empty later update does not erase degradation": false,
+        "earlier market report survives later node updates": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "exactly two parallel findings retained": true,
+        "parallel flags both retained": true,
+        "engine agrees with merged consumer state": true,
+        "empty later update does not erase degradation": true,
+        "earlier market report survives later node updates": true
+      }
+    }
+  },
+  {
+    "case": "test_engine_retains_parallel_merged_flags[sync-fallback]",
+    "control": false,
+    "identical_inputs_sha256": "9c659edc05503cca0fcc2e39a6c21d492176a1438b84ac51206b26f2e926a840",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "exactly two parallel findings retained": false,
+        "parallel flags both retained": false,
+        "engine agrees with merged consumer state": true,
+        "empty later update does not erase degradation": false,
+        "earlier market report survives later node updates": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "exactly two parallel findings retained": true,
+        "parallel flags both retained": true,
+        "engine agrees with merged consumer state": true,
+        "empty later update does not erase degradation": true,
+        "earlier market report survives later node updates": true
+      }
+    }
+  },
+  {
+    "case": "test_engine_retains_parallel_merged_flags[async-dynamic]",
+    "control": false,
+    "identical_inputs_sha256": "09033313ad7c0d30a137dac7becf9bca78f39998e720a50ee1d9e8aba046755a",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "exactly two parallel findings retained": false,
+        "parallel flags both retained": false,
+        "engine agrees with merged consumer state": true,
+        "empty later update does not erase degradation": false,
+        "earlier market report survives later node updates": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "exactly two parallel findings retained": true,
+        "parallel flags both retained": true,
+        "engine agrees with merged consumer state": true,
+        "empty later update does not erase degradation": true,
+        "earlier market report survives later node updates": true
+      }
+    }
+  },
+  {
+    "case": "test_engine_retains_parallel_merged_flags[async-fallback]",
+    "control": false,
+    "identical_inputs_sha256": "52e0d4a6aa3908cd80347ca372114100340a2a74910fba47605a16f0f2084d6b",
+    "baseline": {
+      "outcome": "failed",
+      "exception_type": "BusinessMismatch",
+      "checks": {
+        "exactly two parallel findings retained": false,
+        "parallel flags both retained": false,
+        "engine agrees with merged consumer state": true,
+        "empty later update does not erase degradation": false,
+        "earlier market report survives later node updates": true
+      }
+    },
+    "patched": {
+      "outcome": "passed",
+      "checks": {
+        "exactly two parallel findings retained": true,
+        "parallel flags both retained": true,
+        "engine agrees with merged consumer state": true,
+        "empty later update does not erase degradation": true,
+        "earlier market report survives later node updates": true
+      }
+    }
+  }
+]

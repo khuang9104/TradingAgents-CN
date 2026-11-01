@@ -1,0 +1,397 @@
+FFFF...FFFFFF.FF.FF..FFFFFFFFFFFF                                        [100%]
+================================== FAILURES ===================================
+________ test_selected_task_result_is_not_overwritten_by_legacy_source ________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:29: in test_selected_task_result_is_not_overwritten_by_legacy_source
+    evidence({'selected': selected, 'legacy': legacy}, response, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: selected task source retained; selected report retained; selected degradation retained
+_______________ test_c1_formatter_persistence_web[True-memory] ________________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:81: in test_c1_formatter_persistence_web
+    evidence({'raw': raw, 'source': source}, stages, checks)
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: formatted: degradation identity preserved; task: degradation identity preserved; report: degradation identity preserved; web: degradation identity preserved
+------------------------------ Captured log call ------------------------------
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+________________ test_c1_formatter_persistence_web[True-task] _________________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:81: in test_c1_formatter_persistence_web
+    evidence({'raw': raw, 'source': source}, stages, checks)
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: formatted: degradation identity preserved; task: degradation identity preserved; report: degradation identity preserved; web: degradation identity preserved
+------------------------------ Captured log call ------------------------------
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+_______________ test_c1_formatter_persistence_web[True-report] ________________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:81: in test_c1_formatter_persistence_web
+    evidence({'raw': raw, 'source': source}, stages, checks)
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: formatted: degradation identity preserved; task: degradation identity preserved; report: degradation identity preserved; web: degradation identity preserved
+------------------------------ Captured log call ------------------------------
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+________________ test_c1_web_projection_independently[memory] _________________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:98: in test_c1_web_projection_independently
+    evidence({'source': source, 'result': value}, response, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: Web preserves node identity
+_____________ test_c1_web_projection_independently[unified_tasks] _____________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:98: in test_c1_web_projection_independently
+    evidence({'source': source, 'result': value}, response, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: Web preserves node identity
+________________ test_c1_web_projection_independently[mongodb] ________________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:98: in test_c1_web_projection_independently
+    evidence({'source': source, 'result': value}, response, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: Web preserves node identity
+____________ test_c1_web_projection_independently[analysis_tasks] _____________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:98: in test_c1_web_projection_independently
+    evidence({'source': source, 'result': value}, response, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: Web preserves node identity
+___________ test_c1_incomplete_source_falls_back_to_report[memory] ____________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:118: in test_c1_incomplete_source_falls_back_to_report
+    evidence({'incomplete': incomplete, 'shell': shell, 'report': value}, response, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: report snapshot degradation identity preserved
+------------------------------ Captured log call ------------------------------
+WARNING  test_c1_degraded_nodes:analysis.py:932 ⚠️ [RESULT] 内存中的 result_data 不完整，继续回退查询持久化结果: offline-c1-task
+____________ test_c1_incomplete_source_falls_back_to_report[task] _____________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:118: in test_c1_incomplete_source_falls_back_to_report
+    evidence({'incomplete': incomplete, 'shell': shell, 'report': value}, response, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: report snapshot degradation identity preserved
+------------------------------ Captured log call ------------------------------
+WARNING  test_c1_degraded_nodes:analysis.py:1018 ⚠️ [RESULT] unified_analysis_tasks 数据不完整，回退查询 analysis_reports: offline-c1-task
+_________ test_c2_actual_analyst_checks_without_retry[tools-warning] __________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:140: in test_c2_actual_analyst_checks_without_retry
+    evidence({'content': content, 'tools': tools}, output, checks)
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: correct quality marking
+_________ test_c2_actual_analyst_checks_without_retry[tools-critical] _________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:140: in test_c2_actual_analyst_checks_without_retry
+    evidence({'content': content, 'tools': tools}, output, checks)
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: correct quality marking; critical mapped to node degradation
+________ test_c2_actual_analyst_checks_without_retry[no-tools-warning] ________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:140: in test_c2_actual_analyst_checks_without_retry
+    evidence({'content': content, 'tools': tools}, output, checks)
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: correct quality marking
+_______ test_c2_actual_analyst_checks_without_retry[no-tools-critical] ________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:140: in test_c2_actual_analyst_checks_without_retry
+    evidence({'content': content, 'tools': tools}, output, checks)
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: correct quality marking; critical mapped to node degradation
+______________ test_actual_entry_quality_to_web[warning-dynamic] ______________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:193: in test_actual_entry_quality_to_web
+    evidence({'schema': schema, 'kind': kind, 'content': rt.scenario.content}, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: quality reaches consumer; quality changes downstream prompt
+------------------------------ Captured log call ------------------------------
+ERROR    test_c2_market_quality:researcher.py:117 🔍 [bull_researcher_v2] state keys: ['messages', 'ticker', 'analysis_date', 'market_report', 'news_report', 'bull_report', 'investment_debate_state', 'risk_debate_state', '_max_debate_rounds', '_max_risk_rounds', '_risk_self_debate', '_parallel_opening', 'context', 'skip_cache', 'prompt_overrides', '_workflow_runtime', '_node_errors', 'tool_call_summaries', '_condition_result', '_condition_error'], ticker=000001, company_of_interest=000001, trade_info存在=True, code=None
+WARNING  test_c2_market_quality:engine.py:1333 ⚠️ [WorkflowEngine] 无法生成 final_trade_decision：所有输入报告均为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1084 ⚠️ [TaskAnalysisService] 未找到决策信息，使用默认决策
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1136 ⚠️ [TaskAnalysisService] risk_assessment_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1178 ⚠️ [TaskAnalysisService] investment_plan_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1212 ⚠️ [TaskAnalysisService] final_trade_decision 为空，无法提取 reasoning
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:analysis.py:968 ⚠️ 计算执行时间失败: No module named 'dateutil'
+_____________ test_actual_entry_quality_to_web[warning-fallback] ______________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:193: in test_actual_entry_quality_to_web
+    evidence({'schema': schema, 'kind': kind, 'content': rt.scenario.content}, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: quality reaches consumer; quality changes downstream prompt
+------------------------------ Captured log call ------------------------------
+ERROR    test_c2_market_quality:researcher.py:117 🔍 [bull_researcher_v2] state keys: ['messages', 'company_of_interest', 'trade_date', 'ticker', 'analysis_date', 'company_name', 'industry', 'current_price', 'market_name', 'currency_name', 'currency_symbol', 'current_date', 'start_date', 'market_report', 'fundamentals_report', 'news_report', 'sentiment_report', 'index_report', 'sector_report', 'tool_call_summaries'], ticker=000001, company_of_interest=000001, trade_info存在=True, code=None
+WARNING  test_c2_market_quality:engine.py:1333 ⚠️ [WorkflowEngine] 无法生成 final_trade_decision：所有输入报告均为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1084 ⚠️ [TaskAnalysisService] 未找到决策信息，使用默认决策
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1136 ⚠️ [TaskAnalysisService] risk_assessment_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1178 ⚠️ [TaskAnalysisService] investment_plan_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1212 ⚠️ [TaskAnalysisService] final_trade_decision 为空，无法提取 reasoning
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:analysis.py:968 ⚠️ 计算执行时间失败: No module named 'dateutil'
+_____________ test_actual_entry_quality_to_web[critical-dynamic] ______________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:193: in test_actual_entry_quality_to_web
+    evidence({'schema': schema, 'kind': kind, 'content': rt.scenario.content}, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: quality reaches consumer; quality changes downstream prompt; memory: correct degradation nodes; memory: correct node identities; task: correct degradation nodes; task: correct node identities; report: correct degradation nodes; report: correct node identities
+------------------------------ Captured log call ------------------------------
+ERROR    test_c2_market_quality:researcher.py:117 🔍 [bull_researcher_v2] state keys: ['messages', 'ticker', 'analysis_date', 'market_report', 'news_report', 'bull_report', 'investment_debate_state', 'risk_debate_state', '_max_debate_rounds', '_max_risk_rounds', '_risk_self_debate', '_parallel_opening', 'context', 'skip_cache', 'prompt_overrides', '_workflow_runtime', '_node_errors', 'tool_call_summaries', '_condition_result', '_condition_error'], ticker=000001, company_of_interest=000001, trade_info存在=True, code=None
+WARNING  test_c2_market_quality:engine.py:1333 ⚠️ [WorkflowEngine] 无法生成 final_trade_decision：所有输入报告均为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1084 ⚠️ [TaskAnalysisService] 未找到决策信息，使用默认决策
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1136 ⚠️ [TaskAnalysisService] risk_assessment_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1178 ⚠️ [TaskAnalysisService] investment_plan_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1212 ⚠️ [TaskAnalysisService] final_trade_decision 为空，无法提取 reasoning
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1424 ⚠️ [TaskAnalysisService] 使用备用 summary
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:analysis.py:968 ⚠️ 计算执行时间失败: No module named 'dateutil'
+_____________ test_actual_entry_quality_to_web[critical-fallback] _____________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:193: in test_actual_entry_quality_to_web
+    evidence({'schema': schema, 'kind': kind, 'content': rt.scenario.content}, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: quality reaches consumer; quality changes downstream prompt; memory: correct degradation nodes; memory: correct node identities; task: correct degradation nodes; task: correct node identities; report: correct degradation nodes; report: correct node identities
+------------------------------ Captured log call ------------------------------
+ERROR    test_c2_market_quality:researcher.py:117 🔍 [bull_researcher_v2] state keys: ['messages', 'company_of_interest', 'trade_date', 'ticker', 'analysis_date', 'company_name', 'industry', 'current_price', 'market_name', 'currency_name', 'currency_symbol', 'current_date', 'start_date', 'market_report', 'fundamentals_report', 'news_report', 'sentiment_report', 'index_report', 'sector_report', 'tool_call_summaries'], ticker=000001, company_of_interest=000001, trade_info存在=True, code=None
+WARNING  test_c2_market_quality:engine.py:1333 ⚠️ [WorkflowEngine] 无法生成 final_trade_decision：所有输入报告均为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1084 ⚠️ [TaskAnalysisService] 未找到决策信息，使用默认决策
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1136 ⚠️ [TaskAnalysisService] risk_assessment_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1178 ⚠️ [TaskAnalysisService] investment_plan_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1212 ⚠️ [TaskAnalysisService] final_trade_decision 为空，无法提取 reasoning
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1424 ⚠️ [TaskAnalysisService] 使用备用 summary
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:analysis.py:968 ⚠️ 计算执行时间失败: No module named 'dateutil'
+_________ test_actual_entry_quality_to_web[provider-fallback-dynamic] _________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:193: in test_actual_entry_quality_to_web
+    evidence({'schema': schema, 'kind': kind, 'content': rt.scenario.content}, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: quality reaches consumer; quality changes downstream prompt; memory: correct degradation nodes; memory: correct node identities; task: correct degradation nodes; task: correct node identities; report: correct degradation nodes; report: correct node identities
+------------------------------ Captured log call ------------------------------
+ERROR    test_c2_market_quality:market_analyst_v2.py:232 [market_analyst_v2] 执行失败: offline provider failure: PRIVATE-TEST-ONLY
+Traceback (most recent call last):
+  File "<workspace>\work\draft-upstream-baseline\core\agents\adapters\market_analyst_v2.py", line 215, in execute
+    report = self.invoke_with_tools(messages, analysis_prompt=analysis_prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khuan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khuan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khuan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\work\pr1-minimal\tests\unit\app\test_c2_langgraph_integration.py", line 81, in fake_tool_boundary
+    return model.invoke(messages).content
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khuan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khuan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khuan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\mock.py", line 1198, in _execute_mock_call
+    raise effect
+RuntimeError: offline provider failure: PRIVATE-TEST-ONLY
+ERROR    test_c2_market_quality:researcher.py:117 🔍 [bull_researcher_v2] state keys: ['messages', 'ticker', 'analysis_date', 'market_report', 'news_report', 'bull_report', 'investment_debate_state', 'risk_debate_state', '_max_debate_rounds', '_max_risk_rounds', '_risk_self_debate', '_parallel_opening', 'context', 'skip_cache', 'prompt_overrides', '_workflow_runtime', '_node_errors', 'tool_call_summaries', '_condition_result', '_condition_error'], ticker=000001, company_of_interest=000001, trade_info存在=True, code=None
+WARNING  test_c2_market_quality:engine.py:1333 ⚠️ [WorkflowEngine] 无法生成 final_trade_decision：所有输入报告均为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1084 ⚠️ [TaskAnalysisService] 未找到决策信息，使用默认决策
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1136 ⚠️ [TaskAnalysisService] risk_assessment_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1178 ⚠️ [TaskAnalysisService] investment_plan_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1212 ⚠️ [TaskAnalysisService] final_trade_decision 为空，无法提取 reasoning
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1424 ⚠️ [TaskAnalysisService] 使用备用 summary
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:analysis.py:968 ⚠️ 计算执行时间失败: No module named 'dateutil'
+________ test_actual_entry_quality_to_web[provider-fallback-fallback] _________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:193: in test_actual_entry_quality_to_web
+    evidence({'schema': schema, 'kind': kind, 'content': rt.scenario.content}, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: quality reaches consumer; quality changes downstream prompt; memory: correct degradation nodes; memory: correct node identities; task: correct degradation nodes; task: correct node identities; report: correct degradation nodes; report: correct node identities
+------------------------------ Captured log call ------------------------------
+ERROR    test_c2_market_quality:market_analyst_v2.py:232 [market_analyst_v2] 执行失败: offline provider failure: PRIVATE-TEST-ONLY
+Traceback (most recent call last):
+  File "<workspace>\work\draft-upstream-baseline\core\agents\adapters\market_analyst_v2.py", line 215, in execute
+    report = self.invoke_with_tools(messages, analysis_prompt=analysis_prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khuan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khuan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khuan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\work\pr1-minimal\tests\unit\app\test_c2_langgraph_integration.py", line 81, in fake_tool_boundary
+    return model.invoke(messages).content
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khuan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khuan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\khuan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\mock.py", line 1198, in _execute_mock_call
+    raise effect
+RuntimeError: offline provider failure: PRIVATE-TEST-ONLY
+ERROR    test_c2_market_quality:researcher.py:117 🔍 [bull_researcher_v2] state keys: ['messages', 'company_of_interest', 'trade_date', 'ticker', 'analysis_date', 'company_name', 'industry', 'current_price', 'market_name', 'currency_name', 'currency_symbol', 'current_date', 'start_date', 'market_report', 'fundamentals_report', 'news_report', 'sentiment_report', 'index_report', 'sector_report', 'tool_call_summaries'], ticker=000001, company_of_interest=000001, trade_info存在=True, code=None
+WARNING  test_c2_market_quality:engine.py:1333 ⚠️ [WorkflowEngine] 无法生成 final_trade_decision：所有输入报告均为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1084 ⚠️ [TaskAnalysisService] 未找到决策信息，使用默认决策
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1136 ⚠️ [TaskAnalysisService] risk_assessment_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1178 ⚠️ [TaskAnalysisService] investment_plan_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1212 ⚠️ [TaskAnalysisService] final_trade_decision 为空，无法提取 reasoning
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1424 ⚠️ [TaskAnalysisService] 使用备用 summary
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:analysis.py:968 ⚠️ 计算执行时间失败: No module named 'dateutil'
+___________ test_actual_entry_quality_to_web[wrapped-error-dynamic] ___________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:193: in test_actual_entry_quality_to_web
+    evidence({'schema': schema, 'kind': kind, 'content': rt.scenario.content}, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: memory: correct degradation nodes; memory: correct node identities; task: correct degradation nodes; task: correct node identities; report: correct degradation nodes; report: correct node identities
+------------------------------ Captured log call ------------------------------
+ERROR    test_c2_market_quality:builder.py:2246 [节点执行] ❌ entry_news (新闻节点) - 执行失败: PRIVATE-ENTRY-ERROR offline peer failure
+Traceback (most recent call last):
+  File "<workspace>\work\draft-upstream-baseline\core\workflow\builder.py", line 2161, in _execute_agent_node_with_runtime
+    raw_result = agent_callable(agent_state)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\work\pr1-minimal\tests\unit\app\test_pr1_task_entry.py", line 191, in __call__
+    raise RuntimeError("PRIVATE-ENTRY-ERROR offline peer failure")
+RuntimeError: PRIVATE-ENTRY-ERROR offline peer failure
+WARNING  test_c2_market_quality:builder.py:2265 [节点执行] ⚠️ entry_news (新闻节点) - 降级处理，工作流继续执行
+ERROR    test_c2_market_quality:researcher.py:117 🔍 [bull_researcher_v2] state keys: ['messages', 'ticker', 'analysis_date', 'market_report', 'news_report', 'bull_report', 'investment_debate_state', 'risk_debate_state', '_max_debate_rounds', '_max_risk_rounds', '_risk_self_debate', '_parallel_opening', 'context', 'skip_cache', 'prompt_overrides', '_workflow_runtime', '_node_errors', 'tool_call_summaries', '_condition_result', '_condition_error'], ticker=000001, company_of_interest=000001, trade_info存在=True, code=None
+WARNING  test_c2_market_quality:engine.py:1333 ⚠️ [WorkflowEngine] 无法生成 final_trade_decision：所有输入报告均为空
+WARNING  test_c2_market_quality:engine.py:1294 [WorkflowEngine] 内置工作流存在降级节点: ['entry_news']
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1084 ⚠️ [TaskAnalysisService] 未找到决策信息，使用默认决策
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1136 ⚠️ [TaskAnalysisService] risk_assessment_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1178 ⚠️ [TaskAnalysisService] investment_plan_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1212 ⚠️ [TaskAnalysisService] final_trade_decision 为空，无法提取 reasoning
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1424 ⚠️ [TaskAnalysisService] 使用备用 summary
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:analysis.py:968 ⚠️ 计算执行时间失败: No module named 'dateutil'
+__________ test_actual_entry_quality_to_web[wrapped-error-fallback] ___________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:193: in test_actual_entry_quality_to_web
+    evidence({'schema': schema, 'kind': kind, 'content': rt.scenario.content}, {
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: memory: correct degradation nodes; memory: correct node identities; task: correct degradation nodes; task: correct node identities; report: correct degradation nodes; report: correct node identities
+------------------------------ Captured log call ------------------------------
+ERROR    test_c2_market_quality:builder.py:2246 [节点执行] ❌ entry_news (新闻节点) - 执行失败: PRIVATE-ENTRY-ERROR offline peer failure
+Traceback (most recent call last):
+  File "<workspace>\work\draft-upstream-baseline\core\workflow\builder.py", line 2161, in _execute_agent_node_with_runtime
+    raw_result = agent_callable(agent_state)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\work\pr1-minimal\tests\unit\app\test_pr1_task_entry.py", line 191, in __call__
+    raise RuntimeError("PRIVATE-ENTRY-ERROR offline peer failure")
+RuntimeError: PRIVATE-ENTRY-ERROR offline peer failure
+WARNING  test_c2_market_quality:builder.py:2265 [节点执行] ⚠️ entry_news (新闻节点) - 降级处理，工作流继续执行
+ERROR    test_c2_market_quality:researcher.py:117 🔍 [bull_researcher_v2] state keys: ['messages', 'company_of_interest', 'trade_date', 'ticker', 'analysis_date', 'company_name', 'industry', 'current_price', 'market_name', 'currency_name', 'currency_symbol', 'current_date', 'start_date', 'market_report', 'fundamentals_report', 'news_report', 'sentiment_report', 'index_report', 'sector_report', 'tool_call_summaries'], ticker=000001, company_of_interest=000001, trade_info存在=True, code=None
+WARNING  test_c2_market_quality:engine.py:1333 ⚠️ [WorkflowEngine] 无法生成 final_trade_decision：所有输入报告均为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1084 ⚠️ [TaskAnalysisService] 未找到决策信息，使用默认决策
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1136 ⚠️ [TaskAnalysisService] risk_assessment_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1178 ⚠️ [TaskAnalysisService] investment_plan_raw 为空
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1212 ⚠️ [TaskAnalysisService] final_trade_decision 为空，无法提取 reasoning
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1424 ⚠️ [TaskAnalysisService] 使用备用 summary
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:task_analysis_service.py:1656 ⚠️ [TaskAnalysisService._format_decision_dict] decision 中没有有效的 price_analysis_range，前端将显示 '-'
+WARNING  test_c1_degraded_nodes:analysis.py:968 ⚠️ 计算执行时间失败: No module named 'dateutil'
+___________ test_engine_retains_parallel_merged_flags[sync-dynamic] ___________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:207: in test_engine_retains_parallel_merged_flags
+    evidence({'schema': schema, 'async': asynchronous, 'market_report': '', 'peer_severity': 'critical'},
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: exactly two parallel findings retained; parallel flags both retained; empty later update does not erase degradation
+------------------------------ Captured log call ------------------------------
+ERROR    test_c2_market_quality:researcher.py:117 🔍 [bull_researcher_v2] state keys: ['messages', 'ticker', 'analysis_date', 'market_report', 'news_report', 'bull_report', 'investment_debate_state', 'risk_debate_state', '_max_debate_rounds', '_max_risk_rounds', '_risk_self_debate', '_parallel_opening', 'skip_cache', 'prompt_overrides', '_workflow_runtime', '_node_errors', 'tool_call_summaries', '_condition_result', '_condition_error', '_analysis_data_source'], ticker=000001, company_of_interest=000001, trade_info存在=True, code=None
+__________ test_engine_retains_parallel_merged_flags[sync-fallback] ___________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:207: in test_engine_retains_parallel_merged_flags
+    evidence({'schema': schema, 'async': asynchronous, 'market_report': '', 'peer_severity': 'critical'},
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: exactly two parallel findings retained; parallel flags both retained; empty later update does not erase degradation
+------------------------------ Captured log call ------------------------------
+ERROR    test_c2_market_quality:researcher.py:117 🔍 [bull_researcher_v2] state keys: ['messages', 'company_of_interest', 'trade_date', 'ticker', 'analysis_date', 'company_name', 'industry', 'current_price', 'market_name', 'currency_name', 'currency_symbol', 'current_date', 'start_date', 'market_report', 'fundamentals_report', 'news_report', 'sentiment_report', 'index_report', 'sector_report', 'tool_call_summaries'], ticker=000001, company_of_interest=000001, trade_info存在=True, code=None
+__________ test_engine_retains_parallel_merged_flags[async-dynamic] ___________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:207: in test_engine_retains_parallel_merged_flags
+    evidence({'schema': schema, 'async': asynchronous, 'market_report': '', 'peer_severity': 'critical'},
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: exactly two parallel findings retained; parallel flags both retained; empty later update does not erase degradation
+------------------------------ Captured log call ------------------------------
+ERROR    test_c2_market_quality:researcher.py:117 🔍 [bull_researcher_v2] state keys: ['messages', 'ticker', 'analysis_date', 'market_report', 'news_report', 'bull_report', 'investment_debate_state', 'risk_debate_state', '_max_debate_rounds', '_max_risk_rounds', '_risk_self_debate', '_parallel_opening', 'skip_cache', 'prompt_overrides', '_workflow_runtime', '_node_errors', 'tool_call_summaries', '_condition_result', '_condition_error', '_analysis_data_source'], ticker=000001, company_of_interest=000001, trade_info存在=True, code=None
+__________ test_engine_retains_parallel_merged_flags[async-fallback] __________
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:207: in test_engine_retains_parallel_merged_flags
+    evidence({'schema': schema, 'async': asynchronous, 'market_report': '', 'peer_severity': 'critical'},
+..\pr1-minimal\tests\unit\app\test_pr1_comparison.py:44: in verify
+    raise BusinessMismatch('BUSINESS: ' + '; '.join(failed))
+E   test_pr1_comparison.BusinessMismatch: BUSINESS: exactly two parallel findings retained; parallel flags both retained; empty later update does not erase degradation
+------------------------------ Captured log call ------------------------------
+ERROR    test_c2_market_quality:researcher.py:117 🔍 [bull_researcher_v2] state keys: ['messages', 'company_of_interest', 'trade_date', 'ticker', 'analysis_date', 'company_name', 'industry', 'current_price', 'market_name', 'currency_name', 'currency_symbol', 'current_date', 'start_date', 'market_report', 'fundamentals_report', 'news_report', 'sentiment_report', 'index_report', 'sector_report', 'tool_call_summaries'], ticker=000001, company_of_interest=000001, trade_info存在=True, code=None
+============================== warnings summary ===============================
+unit/app/test_pr1_comparison.py: 16 warnings
+  <workspace>\work\draft-upstream-baseline\app\utils\report_saver.py:184: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    timestamp = datetime.utcnow()
+
+unit/app/test_pr1_comparison.py: 94 warnings
+  <workspace>\.test-envs\langgraph-0.4.8\Lib\site-packages\pydantic\_internal\_config.py:323: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+    warnings.warn(DEPRECATION_MESSAGE, DeprecationWarning)
+
+unit/app/test_pr1_comparison.py: 130 warnings
+  <workspace>\.test-envs\langgraph-0.4.8\Lib\site-packages\pydantic\_internal\_generate_schema.py:298: PydanticDeprecatedSince20: `json_encoders` is deprecated. See https://docs.pydantic.dev/2.11/concepts/serialization/#custom-serializers for alternatives. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+    warnings.warn(
+
+unit/app/test_pr1_comparison.py: 20 warnings
+  <workspace>\.test-envs\langgraph-0.4.8\Lib\site-packages\pydantic\fields.py:1062: PydanticDeprecatedSince20: `min_items` is deprecated and will be removed, use `min_length` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+    warn('`min_items` is deprecated and will be removed, use `min_length` instead', DeprecationWarning)
+
+unit/app/test_pr1_comparison.py: 20 warnings
+  <workspace>\.test-envs\langgraph-0.4.8\Lib\site-packages\pydantic\fields.py:1068: PydanticDeprecatedSince20: `max_items` is deprecated and will be removed, use `max_length` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+    warn('`max_items` is deprecated and will be removed, use `max_length` instead', DeprecationWarning)
+
+unit/app/test_pr1_comparison.py: 30 warnings
+  <workspace>\work\draft-upstream-baseline\core\workflow\builder.py:2076: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    "updated_at": datetime.utcnow(),
+
+unit/app/test_pr1_comparison.py: 30 warnings
+  <workspace>\work\draft-upstream-baseline\core\workflow\builder.py:2078: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    "$setOnInsert": {"created_at": datetime.utcnow()},
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_selected_task_result_is_not_overwritten_by_legacy_source
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_c1_formatter_persistence_web[True-memory]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_c1_formatter_persistence_web[True-task]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_c1_formatter_persistence_web[True-report]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_c1_web_projection_independently[memory]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_c1_web_projection_independently[unified_tasks]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_c1_web_projection_independently[mongodb]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_c1_web_projection_independently[analysis_tasks]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_c1_incomplete_source_falls_back_to_report[memory]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_c1_incomplete_source_falls_back_to_report[task]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_c2_actual_analyst_checks_without_retry[tools-warning]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_c2_actual_analyst_checks_without_retry[tools-critical]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_c2_actual_analyst_checks_without_retry[no-tools-warning]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_c2_actual_analyst_checks_without_retry[no-tools-critical]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_actual_entry_quality_to_web[warning-dynamic]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_actual_entry_quality_to_web[warning-fallback]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_actual_entry_quality_to_web[critical-dynamic]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_actual_entry_quality_to_web[critical-fallback]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_actual_entry_quality_to_web[provider-fallback-dynamic]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_actual_entry_quality_to_web[provider-fallback-fallback]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_actual_entry_quality_to_web[wrapped-error-dynamic]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_actual_entry_quality_to_web[wrapped-error-fallback]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_engine_retains_parallel_merged_flags[sync-dynamic]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_engine_retains_parallel_merged_flags[sync-fallback]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_engine_retains_parallel_merged_flags[async-dynamic]
+FAILED ..\pr1-minimal\tests\unit\app\test_pr1_comparison.py::test_engine_retains_parallel_merged_flags[async-fallback]
+26 failed, 7 passed, 340 warnings in 26.55s

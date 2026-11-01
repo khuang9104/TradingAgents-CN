@@ -1,0 +1,32 @@
+.................................                                        [100%]
+============================== warnings summary ===============================
+unit/app/test_pr1_comparison.py: 16 warnings
+  <workspace>\work\pr1-minimal\app\utils\report_saver.py:188: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    timestamp = datetime.utcnow()
+
+unit/app/test_pr1_comparison.py: 94 warnings
+  <workspace>\.test-envs\langgraph-0.4.8\Lib\site-packages\pydantic\_internal\_config.py:323: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+    warnings.warn(DEPRECATION_MESSAGE, DeprecationWarning)
+
+unit/app/test_pr1_comparison.py: 130 warnings
+  <workspace>\.test-envs\langgraph-0.4.8\Lib\site-packages\pydantic\_internal\_generate_schema.py:298: PydanticDeprecatedSince20: `json_encoders` is deprecated. See https://docs.pydantic.dev/2.11/concepts/serialization/#custom-serializers for alternatives. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+    warnings.warn(
+
+unit/app/test_pr1_comparison.py: 20 warnings
+  <workspace>\.test-envs\langgraph-0.4.8\Lib\site-packages\pydantic\fields.py:1062: PydanticDeprecatedSince20: `min_items` is deprecated and will be removed, use `min_length` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+    warn('`min_items` is deprecated and will be removed, use `min_length` instead', DeprecationWarning)
+
+unit/app/test_pr1_comparison.py: 20 warnings
+  <workspace>\.test-envs\langgraph-0.4.8\Lib\site-packages\pydantic\fields.py:1068: PydanticDeprecatedSince20: `max_items` is deprecated and will be removed, use `max_length` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+    warn('`max_items` is deprecated and will be removed, use `max_length` instead', DeprecationWarning)
+
+unit/app/test_pr1_comparison.py: 30 warnings
+  <workspace>\work\pr1-minimal\core\workflow\builder.py:2077: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    "updated_at": datetime.utcnow(),
+
+unit/app/test_pr1_comparison.py: 30 warnings
+  <workspace>\work\pr1-minimal\core\workflow\builder.py:2079: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    "$setOnInsert": {"created_at": datetime.utcnow()},
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+33 passed, 340 warnings in 24.85s
